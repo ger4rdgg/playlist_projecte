@@ -10,7 +10,7 @@ deploy:
   provider: heroku
 api_key:
   secure: <KEY>
-app: personal-website-example # Heroku app’s name
+app: playlist-web-project # Heroku app’s name
 on:
-  repo: ferranverdes/rp-personal-website-example
+  repo: ger4rdgg/playlist_projecte
   branch: master
