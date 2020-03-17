@@ -25,7 +25,7 @@ SECRET_KEY = '%$4_5@2$%*0%2%93qu^w^)(tcj4v35qf0$y#+gvvlczae1t!o_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['playlist-web-project.herokuapp.com']
 
 
 # Application definition
@@ -120,3 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
