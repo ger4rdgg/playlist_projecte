@@ -9,7 +9,7 @@ class song(models.Model):
         return "name:{0}, length:{1}".format(self.name, self.length)
 
 
-class list(models.Model):
+class list(models.Model)
     name = models.CharField(max_length=20, blank=True, null=True)
     length = models.IntegerField()
     songs = models.ManyToManyField(song)
