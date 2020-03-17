@@ -1,16 +1,17 @@
-language:
-  python
+language: python
 python:
-  - '3.7'
+- '3.7'
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 script:
-  - python manage.py test
+- python manage.py test
 deploy:
   provider: heroku
+  api_key:
+    secure: ppwqf1Vk7irinMkW1AJFK/bzVLC6JuOEKKkFhL2DSNzo+wJX1DyNLmc6DcDCDX0n6QGlhPlY4Q3WY4ijesAVyDrPXZRZOKZTwfwPERVCH3kn7sVTMGaemC5pQj04nkrGuvBc3WB3xHEQ3c+IO9lCNvGvZDp6usPbjFimaA63OX1wER2DuR3wVdGG2g+TQaVHYaCPzz5rMjIdv88pCn+SB7KB6HAbE/xf3/WEXF1SWl5/fJid3ZXBuTlWF+WxvJ/DDL5rm0XxPeuVPU8bL66U30pJTSWQqwswaDb1GxHFPApKSOH6bZyx0zaQK82vUwL8hABdtY75iM/2Y++n54XKMInWFj6xX+TXAoDjYRMmQ8ns54LAJfuPF8WnTuDc4vwE/y5+B2zTU4FZeS1SZlmjpoTcpPEmSWQpc04rBHyKBQ1Cjvhe+PRDx0PVKGGG05sDr+VWXjSIO8nQcS41qqa171qln7P7Rr2tSZQ8Zy3RxOKdr64+V8J8v1s5cT9ryEM5o6Bl8z6UyEDTIUU6TAWOMvOdUFPf3NmeLvTdwEWsJGOfC5OBpumN0tJYUdqZQuaMfWd6vbm/lFOvBj/P/TuIGAP+ZYnHSDTehXmY8EMN214MiIuXsERz2L77tmcKsNlQkjU//0R/TLAKw1gbAM+jxqR16v59KcZmbaCKgudtvso=
 api_key:
-  secure: <KEY>
-app: playlist-web-project # Heroku app’s name
-on:
+  secure: "<KEY>"
+app: playlist-web-project
+true:
   repo: ger4rdgg/playlist_projecte
   branch: master
