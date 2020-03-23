@@ -25,7 +25,7 @@ SECRET_KEY = '%$4_5@2$%*0%2%93qu^w^)(tcj4v35qf0$y#+gvvlczae1t!o_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['playlist-web-project.herokuapp.com']
+ALLOWED_HOSTS = ['playlist-web-project.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
