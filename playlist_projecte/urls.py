@@ -19,3 +19,6 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+path('', include('social_django.urls', namespace='social'))
+path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout')

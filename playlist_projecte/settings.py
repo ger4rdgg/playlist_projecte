@@ -108,6 +108,13 @@ AUTHENTICATION_BACKENDS=(
 
 )
 
+#client and server ID for OAuth2
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY='51296791259-q24m5198r6m6avcdb44fm0aba8fifcq4.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='CyNAsFINaG_2M_cSIhEjE8tP'
+
+#redirecting user to URL
+LOGIN_REDIRECT_URL='/'
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
