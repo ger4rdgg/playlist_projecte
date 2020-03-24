@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'playlist_app.apps.PlaylistAppConfig',
+    'social_django',
+
 ]
 
 MIDDLEWARE = [
@@ -49,6 +51,21 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'http://962463693409-2uv3db5skmpe0rekh8jaqqvps14p16qe.apps.googleusercontent.com/'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'j_XLoupcaP5mk4kaTz_IHXqS'
+
+LOGIN_URL = '/auth/login/google-oauth2/'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
 ROOT_URLCONF = 'playlist_projecte.urls'
 
