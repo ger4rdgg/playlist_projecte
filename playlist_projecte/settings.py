@@ -57,8 +57,8 @@ AUTHENTICATION_BACKENDS = (
 
 )
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '51296791259-q24m5198r6m6avcdb44fm0aba8fifcq4.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'CyNAsFINaG_2M_cSIhEjE8tP'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '51296791259-fvipotlm6nk6dq072lqmi3vndosvi0hf.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'yPPoQTK0TaznSPasNyjj3dSl'
 
 LOGIN_URL = '/auth/login/google-oauth2/'
 
