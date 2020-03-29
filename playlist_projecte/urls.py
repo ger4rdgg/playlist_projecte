@@ -18,7 +18,6 @@ from django.urls import path, include
 from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', include('playlist_app.urls')),
 
-path('', include('social_django.urls', namespace='social'))
-path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout')
+]

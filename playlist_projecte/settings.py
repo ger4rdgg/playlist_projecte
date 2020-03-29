@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'playlist_app.apps.PlaylistAppConfig',
     'social_django',
+    'playlist_app'
 
 ]
 
@@ -54,13 +54,12 @@ MIDDLEWARE = [
 
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.google.GoogleOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
 )
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '51296791259-q24m5198r6m6avcdb44fm0aba8fifcq4.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'CyNAsFINaG_2M_cSIhEjE8tP'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '818288473621-0m3qt1okrljlusj64qmpva1c2l7atikl.apps.googleusercontent.com'
 
-LOGIN_URL = '/auth/login/google-oauth2/'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '-dTmktQLSr_CCIx7XDhxV6Bq'
+
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
