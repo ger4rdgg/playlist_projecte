@@ -2,8 +2,18 @@ from django.shortcuts import render
 from playlist_app.models import song
 from django.contrib.auth import logout
 
+
 def index(request):
-	return render(request, 'index.html', {})
+    return render(request, 'index.html', {})
+
+
+def login(request):
+    return render(request, 'users/login.html', {})
+
+
+def welcome(request):
+    return render(request, 'users/welcome.html', {})
+
 
 def index1(request):
     context = {
@@ -13,7 +23,3 @@ def index1(request):
 
     return render(request, 'playlist_app/index.html', context,
                   {'nsongs': song.objects.count()})
-
-
-
-
