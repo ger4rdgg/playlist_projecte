@@ -17,10 +17,10 @@
     <!-- Login Form -->
     <form method="POST">
       {% comment %} {{ form.as_p }} {% endcomment %}
-      {% csrf_token %}  
+      {% csrf_token %}
       <input type="text" name="username" class="fadeIn second" autofocus="" autocapitalize="none" placeholder="login" autocomplete="username" maxlength="150" required="" id="id_username">
       {% comment %} <input type="text" id="login" class="fadeIn second" name="login" placeholder="login"> {% endcomment %}
-      <input type="password" name="password"  class="fadeIn third" autocomplete="current-password" placeholder="password" required="" id="id_password">      
+      <input type="password" name="password"  class="fadeIn third" autocomplete="current-password" placeholder="password" required="" id="id_password">
       {% comment %} <input type="text" id="password" class="fadeIn third" name="login" placeholder="password"> {% endcomment %}
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
