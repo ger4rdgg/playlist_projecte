@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+<!------ Include the above in your HEAD tag ---------->
+{% block content %}
+    <h1>
+        songs
+        {% if user.is_authenticated %}(<a href="{% url 'playlist_app:song_create' %}">add</a>){% endif %}
+    </h1>
+{% endblock %}

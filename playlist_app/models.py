@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls.base import reverse
 
 
 class song(models.Model):
@@ -8,6 +9,8 @@ class song(models.Model):
     def __str__(self):
         return "name:{0}, length:{1}".format(self.name, self.length)
 
+    # def get_absolute_url(self):
+    #     return reverse('playlist_app:')
 
 class list(models.Model):
     name = models.CharField(max_length=20, blank=True, null=True)

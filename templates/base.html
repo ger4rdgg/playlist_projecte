@@ -44,7 +44,7 @@
 
                 {% if user.is_authenticated %}
                     <p><a class="text-white">Hi, {{ user.username }}</a></p>
-                    <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
+                    <a class="btn btn-primary" href="{% url 'playlist_app:logout' %}">Logout</a>
                 {% else %}
                     <p><a class="text-white">Welcome</a></p>
                     <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">
