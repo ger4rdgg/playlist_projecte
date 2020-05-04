@@ -36,3 +36,15 @@ def playlist_update(request, pk=None):
         form = ListForm(instance=llista)
     return render(request, 'list_form.html', {"form": form})
 
+def playlist_remove(request, pk=None):
+    llista = get_object_or_404(playlist_list, pk=pk)
+
+    if request.method == "POST":
+        llista.delete()
+        return redirect('playlist_list')
+    context = {
+        "llista": llista
+    }
+    return render(request, "playlist_delete.html", context)
+
+
