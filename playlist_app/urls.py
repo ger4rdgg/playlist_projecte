@@ -6,6 +6,8 @@ from playlist_app import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('', include('social_django.urls', namespace='social')),
-    path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout')
+    path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
+    path('playlists/', views.playlist_list, name='playlists'),
+    path('playlists/<int:pk>/edit/', views.playlist_update, name='list_update'),
 
 ]
