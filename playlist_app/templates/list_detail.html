@@ -4,6 +4,7 @@
 <div class="detail">
     <h1>{{ llista.name }}</h1>
     <p style="padding-left: 315px; margin-top: -45px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/edit/" role="button">Editar</a></p>
+    <p style="padding-left: 210px; margin-top: -54px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/delete/" role="button">Esborrar</a></p>
     {% if llista.songs.exists %}
         <h2>Cançons:</h2>
 

@@ -54,6 +54,7 @@ MIDDLEWARE = [
 
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend'
 )
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '818288473621-0m3qt1okrljlusj64qmpva1c2l7atikl.apps.googleusercontent.com'
