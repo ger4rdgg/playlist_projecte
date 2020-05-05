@@ -16,7 +16,7 @@ class list(models.Model):
     songs = models.ManyToManyField(song)
 
     def __str__(self):
-        return "name:{0}, length:{1}".format(self.name, self.length)
+        return "name:{0}, songs:{1}".format(self.name, self.songs)
 
 
 class artist(models.Model):

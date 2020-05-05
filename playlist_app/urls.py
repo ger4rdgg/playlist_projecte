@@ -9,5 +9,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
     path('playlists/', views.playlist_list, name='playlists'),
     path('playlists/<int:pk>/edit/', views.playlist_update, name='list_update'),
+    path('playlists/<int:pk>/', views.list_detail, name='list_detail'),
+
 
 ]

@@ -31,8 +31,17 @@ def playlist_update(request, pk=None):
         if form.is_valid():
             llista = form.save(commit=False)
             llista.save()
-            return redirect('playlist_list')
+            form.save_m2m()
+            return redirect('playlists')
     else:
         form = ListForm(instance=llista)
     return render(request, 'list_form.html', {"form": form})
 
+def list_detail(request, pk=None):
+    llista = list.objects.get(pk=pk)
+
+    context = {
+        'llista': llista,
+
+    }
+    return render(request, 'list_detail.html', context)

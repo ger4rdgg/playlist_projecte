@@ -5,20 +5,11 @@
 	<h1 style="color: white; padding-top: 10px; font-family: 'GothamPro'">Play Lists:</h1>
 	<hr>
 	{% for playlist in list %}
-        <div style="background: white; text-align: left; border-radius: 15px; width: 44%; margin-bottom: 7px">
+        <div style="background: white; text-align: left; border-radius: 15px; width: 44%; margin-bottom: 7px; height: 90px">
 	<h2 style="padding-left: 20px"> Nom de la llista: {{ playlist.name }}</h2>
         <p style="padding-left: 20px">Data de creació: {{ playlist.created_on }}</p>
-        <p><a class="btn btn-outline-info" href="/playlists/{{playlist.pk}}/edit/" role="button">Editar</a></p>
-	<small>
-    <h3 style=" padding-left: 20px; padding-bottom: 20px">Songs: </h3>
-    {% if playlist.songs %}
-        {% for song in playlist.songs.all %}
-		    <p>{{ song.name }}</p>
-		{% endfor %}
-        {% else %}
-        <p>No songs</p>
-    {% endif %}
-	</small>
+        <p style="padding-left: 460px; margin-top: -70px;"><a class="btn btn-outline-info" href="/playlists/{{playlist.pk}}/" role="button">Veure</a></p>
+
    </div>
 	{% endfor %}
 
