@@ -31,8 +31,7 @@ def playlist_update(request, pk=None):
         if form.is_valid():
             llista = form.save(commit=False)
             llista.save()
-            form.save_m2m()
-            return redirect('playlists')
+            return redirect('playlist_list')
     else:
         form = ListForm(instance=llista)
     return render(request, 'list_form.html', {"form": form})
@@ -45,3 +44,15 @@ def list_detail(request, pk=None):
 
     }
     return render(request, 'list_detail.html', context)
+
+def playlist_remove(request, pk=None):
+    llista = get_object_or_404(playlist_list, pk=pk)
+
+    if request.method == "POST":
+        llista.delete()
+        return redirect('playlist_list')
+    context = {
+        "llista": llista
+    }
+    return render(request, "playlist_delete.html", context)
+
