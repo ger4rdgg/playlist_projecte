@@ -6,7 +6,7 @@ from playlist_app.models import song, list
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import CreateView, UpdateView
-from .forms import ListForm
+from .forms import song_form, ListForm
 
 
 def index(request):
@@ -60,18 +60,17 @@ def playlist_list(request):
     return render(request, 'playlist_app/playlists.html', context)
 
 
-def playlist_create(request, pk=None):
-    llista = get_object_or_404(list, pk=pk)
+def playlist_create(request):
 
     if request.method == "POST":
-        form = ListForm(request.POST, instance=llista)
+        form = song_form(request.POST)
         if form.is_valid():
             llista = form.save(commit=False)
             llista.save()
             form.save_m2m()
             return redirect('playlists')
     else:
-        form = ListForm(instance=llista)
+        form = song_form()
     return render(request, 'playlist_app/playlist_create.html', {"form": form})
 
 
@@ -88,8 +87,6 @@ def playlist_update(request, pk=None):
     else:
         form = ListForm(instance=llista)
     return render(request, 'playlist_app/list_form.html', {"form": form})
-
-
 
 
 def list_detail(request, pk=None):

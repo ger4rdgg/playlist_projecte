@@ -19,8 +19,8 @@ class song_form(forms.ModelForm):
             "length"
         )
         labels = {
-            "name": "Nom de la cançó",
-            "length": "Llargada de la cançó"
+            "name": "Nom de la llista",
+            "length": "Llargada de la llista"
         }
 
     def save(self, commit):
