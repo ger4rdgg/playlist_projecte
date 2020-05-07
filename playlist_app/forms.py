@@ -2,8 +2,8 @@ from django.conf import settings
 from django.contrib.auth.forms import AuthenticationForm
 from django import forms
 from .models import *
-
-from datetime import date, timedelta, datetime
+from .models import list
+from django.forms import ModelForm
 
 
 class CustomAuthForm(AuthenticationForm):
@@ -24,5 +24,11 @@ class song_form(forms.ModelForm):
         }
 
     def save(self, commit):
-        #song = settings.GLOBAL_SETTINGS.get('SONGS_AVAILABLE')
+        # song = settings.GLOBAL_SETTINGS.get('SONGS_AVAILABLE')
         result = super(song_form, self).save(commit=False)
+
+
+class ListForm(ModelForm):
+    class Meta:
+        model = list
+        fields = ('name', 'songs',)

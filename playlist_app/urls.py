@@ -3,9 +3,10 @@ from django.contrib import admin
 from django.views.generic import DetailView, ListView
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
-from playlist_app.views import song_create, song_detail
+from playlist_app.views import list_detail, playlist_update, playlist_remove
 from .views import index
 from playlist_app.models import song
+from playlist_app import views
 
 app_name = "playlist_app"
 
@@ -13,16 +14,20 @@ urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^users/', include('users.urls')),
     url(r'^$', index),
-    path('songs/',
-         ListView.as_view(queryset=song.objects.all(),
-                          context_object_name='songs_list',
-                          template_name='playlist_app/songs.html'),
-         name='songs_list'),
-    path('songs/create/', song_create, name='song_create'),
+    # path('songs/',
+    #      ListView.as_view(queryset=song.objects.all(),
+    #                       context_object_name='songs_list',
+    #                       template_name='playlist_app/songs.html'),
+    #      name='songs_list'),
+    # path('songs/create/', song_create, name='song_create'),
 
-    url('songs_details/(?P<id>\d+)/$', song_detail, name='song_detail'),
+#    url('list_details/(?P<id>\d+)/$', list_detail, name='list_detail'),
 
     path('', include('social_django.urls', namespace='social')),
+    path('playlists/<int:pk>/', views.list_detail, name='list_detail'),
+    path('playlists/<int:pk>/delete/', views.playlist_remove, name='list_remove'),
+    path('playlists/<int:pk>/edit/', views.playlist_update, name='list_update'),
+    path('playlists/<int:pk>/create/', views.playlist_create, name='list_create'),
 
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
 
