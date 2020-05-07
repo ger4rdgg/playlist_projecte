@@ -14,11 +14,12 @@
 
     <div class="list-group bg-info" >
         {% for song in songs_list %}
-            <a class="list-group-item list-group-item-info"
+            <a class="list-group-item list-group-item-info">
 {#               href="{{ song.get_absolute_url }}">#}
                 {{ song }}
-{#                <span class="badge">{{ song.move_set.count }}</span>#}
             </a>
+{#                <span class="badge">{{ song.move_set.count }}</span>#}
+
         {% endfor %}
     </div>
 
