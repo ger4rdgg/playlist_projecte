@@ -30,6 +30,7 @@ def index1(request):
                   {'nsongs': song.objects.count()})
 
 
+@login_required
 class song_create(LoginRequiredMixin, CreateView):
     model = song
     template_name = 'playlist_app/song_form.html'

@@ -8,5 +8,25 @@
     <h1>
         songs
         {% if user.is_authenticated %}(<a href="{% url 'playlist_app:song_create' %}">add</a>){% endif %}
+
     </h1>
+    {% if songs_list %}
+
+    <div class="list-group bg-info" >
+        {% for song in songs_list %}
+            <a class="list-group-item list-group-item-info"
+{#               href="{{ song.get_absolute_url }}">#}
+                {{ song }}
+{#                <span class="badge">{{ song.move_set.count }}</span>#}
+            </a>
+        {% endfor %}
+    </div>
+
+
+{% else %}
+
+    No hi ha cançons.
+
+{% endif %}
+
 {% endblock %}

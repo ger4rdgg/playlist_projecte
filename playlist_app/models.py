@@ -6,6 +6,9 @@ class song(models.Model):
     name = models.CharField(max_length=20, blank=True, null=True)
     length = models.IntegerField()
 
+    def get_absolute_url(self):
+        return reverse('song_detail', args=[self.id])
+
     def __str__(self):
         return "name:{0}, length:{1}".format(self.name, self.length)
 
