@@ -1,5 +1,5 @@
 # Created by m_cho at 08/05/2020
-Feature : ​ MODIFY TAGS LIST
+Feature: ​ MODIFY TAG LIST
   In order to : change our tags structure from our tag list.
   As a : admin
   I want to : add, remove or modify our tags and his moods.
