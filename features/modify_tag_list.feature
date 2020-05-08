@@ -7,6 +7,7 @@ Feature: ​ MODIFY TAG LIST
   Background: There is a registered admin
     Given Exists an admin "admin" with password "password"
     And There is a tag list created
+
     |name     |
     |tag list |
 
