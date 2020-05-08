@@ -12,7 +12,7 @@ Feature: List Playlists
     |Llista3         |
 
   Scenario: Show all playlists
-    Given I login as user "user" and with passwowrd "password"
+    Given I login as user "user" and with password "password"
     When I list playlists
     Then I'm viewing a list containing
     |name     |
