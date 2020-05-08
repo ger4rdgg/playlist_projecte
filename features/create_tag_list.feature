@@ -10,7 +10,7 @@ Feature: Create Tag List
     |name     |
 
   Scenario: Show all tags
-    Given I login as admin "admin" and with passwowrd "password"
+    Given I login as admin "admin" and with password "password"
     When I list tags
     Then I'm viewing a list containing
     |name    |
