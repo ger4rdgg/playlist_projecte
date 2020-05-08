@@ -31,15 +31,15 @@ def index1(request):
                   {'nsongs': song.objects.count()})
 
 
-@login_required
-class song_create(LoginRequiredMixin, CreateView):
-    model = song
-    template_name = 'playlist_app/list_form.html'
-    form_class = song_form
-
-    def form_valid(self, form):
-        form.instance.user = self.request.user
-        return super(song_create, self).form_valid(form)
+# @login_required
+# class song_create(LoginRequiredMixin, CreateView):
+#     model = song
+#     template_name = 'playlist_app/list_form.html'
+#     form_class = song_form
+#
+#     def form_valid(self, form):
+#         form.instance.user = self.request.user
+#         return super(song_create, self).form_valid(form)
 
 
 # class song_detail(DetailView):
@@ -61,14 +61,21 @@ def playlist_list(request):
 
 
 def playlist_create(request):
-
+    # Creamos un formulario vacío
+    form = song_form()
+    # Comprobamos si se ha enviado el formulario
     if request.method == "POST":
+        # Añadimos los datos recibidos al formulario
         form = song_form(request.POST)
+        # Si el formulario es válido...
         if form.is_valid():
+            # Guardamos el formulario pero sin confirmarlo,
+            # así conseguiremos una instancia para manejarla
             llista = form.save(commit=False)
             llista.save()
             form.save_m2m()
-            return redirect('playlists')
+            return redirect('playlists')  # ToDo: fer que el botó guardar funcioni i es mostri la llargada de la llista
+
     else:
         form = song_form()
     return render(request, 'playlist_app/playlist_create.html', {"form": form})

@@ -23,10 +23,6 @@ class song_form(forms.ModelForm):
             "length": "Llargada de la llista"
         }
 
-    def save(self, commit):
-        # song = settings.GLOBAL_SETTINGS.get('SONGS_AVAILABLE')
-        result = super(song_form, self).save(commit=False)
-
 
 class ListForm(ModelForm):
     class Meta:

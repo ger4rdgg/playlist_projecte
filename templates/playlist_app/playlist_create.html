@@ -1,18 +1,15 @@
 {%  extends 'base.html' %}
 
-{% block page_content %}
-<div class="form-row field-name">
-    <div>
-        <label for="id_name">Name:</label>
-        <input type="text" name="name" class="vTextField" maxlength="20" id="id_name">
-    </div>
-</div>
-<div class="form-row field-length">
-    <div>
-        <label class="required" for="id_length">Length:</label>
-        <input type="number" name="length" class="vIntegerField" required="" id="id_length">
-    </div>
-</div>
+{% block content %}
+{#    {% if user.is_authenticated %}(<a href="{% url 'playlist_app:playlist_create' %}">add</a>){% endif %}#}
+    <form action="" method="post">
+    {% csrf_token %}
+        {{ form.as_p}}
+        <button class="btn btn-primary" type="submit">GUARDAR</button>
+    </form>
+
+{% endblock %}
+
 {% comment %}
                         <div class="help">Hold down “Control”, or “Command” on a Mac, to select more than one.</div>
                 </div>
@@ -31,4 +28,3 @@
 {% endcomment %}
 
 
-{% endblock %}
