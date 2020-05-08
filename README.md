@@ -15,13 +15,3 @@ It also includes:
 Travis CI configuration
 Heroku
 Dockers (coming soon)
-
-How to run application:
-
-Execute django server with pycharm
-
-It generates an URL Localhost
-
-In this URL we have the app
-
-Then, you can login with OAuth2

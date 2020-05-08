@@ -6,16 +6,17 @@ class song(models.Model):
     length = models.IntegerField()
 
     def __str__(self):
-        return "name:{0}, length:{1}".format(self.name, self.length)
+        return "{0}".format(self.name)
 
 
 class list(models.Model):
     name = models.CharField(max_length=20, blank=True, null=True)
     length = models.IntegerField()
+    created_on = models.DateTimeField(auto_now_add=True)
     songs = models.ManyToManyField(song)
 
     def __str__(self):
-        return "name:{0}, length:{1}".format(self.name, self.length)
+        return "name:{0}, songs:{1}".format(self.name, self.songs)
 
 
 class artist(models.Model):

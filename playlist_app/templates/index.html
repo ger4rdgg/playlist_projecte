@@ -1,22 +1,17 @@
+{% extends "base.html" %}
 
+{% block page_content %}
 <!doctype html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-
-	<title>OAuth2 Authentication</title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-</head>
-
 <body>
-	<div class="jumbotron">
-		<h1>OAuth2 Authentication</h1>
-		{% if user.is_authenticated %}
+	<div class="box">
+
+        {% if user.is_authenticated %}
 		<p>Logged as {{ user.username }}</p>
 		<a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
 		{% else %}
+            <h1 class="test">Registra't amb Google</h1>
 		<a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">
 			Login
 		</a>
@@ -25,3 +20,4 @@
 </body>
 
 </html>
+{% endblock %}
