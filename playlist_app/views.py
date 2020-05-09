@@ -3,12 +3,6 @@ from django.shortcuts import render, get_object_or_404, redirect
 from playlist_app.models import song, list
 from django.contrib.auth import logout
 from .forms import ListForm
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
-
-song_uri = 'spotify:track:6kLCHFM39wkFjOuyPGLGeQ'
-spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
-
 
 def index(request):
 	return render(request, 'index.html', {})
@@ -30,6 +24,7 @@ def playlist_list(request):
     return render(request, 'playlists.html', context)
 
 def playlist_update(request, pk=None):
+
     llista = get_object_or_404(list, pk=pk)
 
     if request.method == "POST":
