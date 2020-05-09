@@ -28,6 +28,7 @@ urlpatterns = [
     path('playlists/delete/<int:pk>/', views.playlist_remove, name='list_remove'),
     path('playlists/edit/<int:pk>', views.playlist_update, name='list_update'),
     path('playlists/create/', views.playlist_create, name='playlist_create'),
+    path('playlists/list', views.playlist_list, name='playlist_list'),
 
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
 

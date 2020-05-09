@@ -13,7 +13,7 @@ class CustomAuthForm(AuthenticationForm):
 
 class song_form(forms.ModelForm):
     class Meta:
-        model = song
+        model = list
         fields = (
             "name",
             "length"
@@ -21,6 +21,7 @@ class song_form(forms.ModelForm):
         labels = {
             "name": "Nom de la llista",
             "length": "Llargada de la llista"
+
         }
 
 

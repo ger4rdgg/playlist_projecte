@@ -57,7 +57,7 @@ def playlist_list(request):
     context = {
         'list': playlist
     }
-    return render(request, 'playlist_app/playlists.html', context)
+    return render(request, 'playlist_app/playlists_list.html', context)
 
 
 def playlist_create(request):
@@ -74,11 +74,21 @@ def playlist_create(request):
             llista = form.save(commit=False)
             llista.save()
             form.save_m2m()
-            return redirect('playlists')  # ToDo: fer que el botó guardar funcioni i es mostri la llargada de la llista
+            return redirect('playlist_app:list_detail')  # ToDo: fer que el botó guardar funcioni i es mostri la llargada de la llista
 
-    else:
-        form = song_form()
+    # else:
+    #     form = song_form()
     return render(request, 'playlist_app/playlist_create.html', {"form": form})
+
+
+# def playlist_length(request, pk=None):
+#     llista = get_object_or_404(list, pk=pk)
+#
+#     if request.method == "POST":
+#         form = ListForm(request.POST, instance=llista)
+#         if form.is_valid():
+#
+#
 
 
 def playlist_update(request, pk=None):
@@ -116,3 +126,6 @@ def playlist_remove(request, pk=None):
         "llista": llista
     }
     return render(request, "playlist_app/playlist_delete.html", context)
+
+
+

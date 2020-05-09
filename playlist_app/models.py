@@ -15,13 +15,15 @@ class song(models.Model):
     # def get_absolute_url(self):
     #     return reverse('playlist_app:')
 
+
 class list(models.Model):
     name = models.CharField(max_length=20, blank=True, null=True)
+    description = models.CharField(max_length=300, blank=True, null=True)
     length = models.IntegerField()
     songs = models.ManyToManyField(song)
 
     def __str__(self):
-        return "name:{0}, length:{1}".format(self.name, self.length)
+        return "name:{0}, description:{1}, length:{2}".format(self.name,self.description, self.length)
 
 
 class artist(models.Model):

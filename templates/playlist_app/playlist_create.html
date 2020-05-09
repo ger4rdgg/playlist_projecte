@@ -2,12 +2,14 @@
 
 {% block content %}
 {#    {% if user.is_authenticated %}(<a href="{% url 'playlist_app:playlist_create' %}">add</a>){% endif %}#}
-    <form action="" method="post">
-    {% csrf_token %}
-        {{ form.as_p}}
-        <button class="btn btn-primary" type="submit">GUARDAR</button>
-    </form>
-
+    <div class="createForm">
+        <form action="" method="post">
+        <h1>Create new list</h1>
+        {% csrf_token %}
+            {{ form.as_p}}
+            <button class="btn btn-primary" type="submit">GUARDAR</button>
+        </form>
+    </div>
 {% endblock %}
 
 {% comment %}
