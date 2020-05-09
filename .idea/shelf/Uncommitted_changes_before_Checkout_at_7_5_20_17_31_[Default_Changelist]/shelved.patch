@@ -1,0 +1,35 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"JavaScriptSettings\">\n    <option name=\"languageLevel\" value=\"ES6\" />\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.7 (venv) (2)\" project-jdk-type=\"Python SDK\" />\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 915dc8a2e2d1de33ca754e5107a249b39a40b00a)
++++ .idea/misc.xml	(date 1588865198215)
+@@ -3,5 +3,5 @@
+   <component name="JavaScriptSettings">
+     <option name="languageLevel" value="ES6" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (venv) (2)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (playlist_projecte) (3)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/playlist_projecte.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"FacetManager\">\n    <facet type=\"django\" name=\"Django\">\n      <configuration>\n        <option name=\"rootFolder\" value=\"$MODULE_DIR$\" />\n        <option name=\"settingsModule\" value=\"playlist_projecte/settings.py\" />\n        <option name=\"manageScript\" value=\"$MODULE_DIR$/manage.py\" />\n        <option name=\"environment\" value=\"&lt;map/&gt;\" />\n        <option name=\"doNotUseTestRunner\" value=\"false\" />\n        <option name=\"trackFilePattern\" value=\"migrations\" />\n      </configuration>\n    </facet>\n  </component>\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/venv\" />\n    </content>\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.7 (venv) (2)\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n  <component name=\"TemplatesService\">\n    <option name=\"TEMPLATE_CONFIGURATION\" value=\"Django\" />\n    <option name=\"TEMPLATE_FOLDERS\">\n      <list>\n        <option value=\"$MODULE_DIR$/../playlist_projecte\\templates\" />\n      </list>\n    </option>\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/playlist_projecte.iml	(revision 915dc8a2e2d1de33ca754e5107a249b39a40b00a)
++++ .idea/playlist_projecte.iml	(date 1588865198067)
+@@ -16,7 +16,7 @@
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/venv" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.7 (venv) (2)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.7 (playlist_projecte) (3)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+   <component name="TemplatesService">
