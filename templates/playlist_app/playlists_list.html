@@ -1,27 +1,28 @@
 {% extends "base.html" %}
-{% load crispy_forms_tags %}
-
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/main.css' %}">
-
-<!------ Include the above in your HEAD tag ---------->
 {% block content %}
-    <div class="editform">
-        <h1>Playlists</h1>
-    <form action="" method="post">
+    <h1>Playlists</h1>
     <div class="container">
-      <div class="row">
-        <div class="col">
-            <form method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <a href="{% url 'playlist_app:playlist_create' %}">Crear nova llista</a>
-            </form>
-        </div>
+        <a href="{% url 'playlist_app:playlist_create' %}">Crear nova llista</a>
+        {% if list %}
 
-      </div>
-    </div>
-    </form>
+            <div class="list-group bg-info" >
+                {% for l in list %}
+                    <a class="list-group-item list-group-item-info">
+        {#               href="{{ song.get_absolute_url }}">#}
+                        {{ l }}
+                    </a>
+        {#                <span class="badge">{{ song.move_set.count }}</span>#}
+
+                {% endfor %}
+            </div>
+
+
+        {% else %}
+
+            No hi ha llistes.
+
+        {% endif %}
     </div>
 {% endblock %}
 

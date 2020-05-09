@@ -16,11 +16,11 @@ class song_form(forms.ModelForm):
         model = list
         fields = (
             "name",
-            "length"
+            "description"
         )
         labels = {
-            "name": "Nom de la llista",
-            "length": "Llargada de la llista"
+            "name": "Nom",
+            "description": "Descripció"
 
         }
 

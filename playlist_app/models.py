@@ -19,7 +19,7 @@ class song(models.Model):
 class list(models.Model):
     name = models.CharField(max_length=20, blank=True, null=True)
     description = models.CharField(max_length=300, blank=True, null=True)
-    length = models.IntegerField()
+    length = models.IntegerField(null=True)
     songs = models.ManyToManyField(song)
 
     def __str__(self):

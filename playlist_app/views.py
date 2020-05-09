@@ -2,7 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import DetailView
 from playlist_app.forms import song_form
-from playlist_app.models import song, list
+from playlist_app.models import *
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import CreateView, UpdateView
@@ -53,7 +53,7 @@ def index1(request):
 
 
 def playlist_list(request):
-    playlist = list.objects.order_by('-created_on')
+    playlist = list.objects.all()
     context = {
         'list': playlist
     }
@@ -74,7 +74,7 @@ def playlist_create(request):
             llista = form.save(commit=False)
             llista.save()
             form.save_m2m()
-            return redirect('playlist_app:list_detail')  # ToDo: fer que el botó guardar funcioni i es mostri la llargada de la llista
+            return redirect('playlist_app:playlist_list')  # ToDo: fer que el botó guardar funcioni i es mostri la llargada de la llista
 
     # else:
     #     form = song_form()
