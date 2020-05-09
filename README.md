@@ -1,17 +1,37 @@
-Playlist_projecte
+Playlist Project
+This is a project for the web project subject, where we are working with django to implement a web 2.0 page. The idea of ​​our page consists of an automatic playlist generator for spotify through the introduction of desired tags by the user. This is the 2nd order of the project.
+Prerequisites
+If you are interested in knowing how to work with the application and reviewing code we worked with you should:
+Have Pycharm installed
 
-First iteration of a project done in Django in the subject Web project to learn how to develop web applications.
+Have python 3.7
 
-Group members: Arnau Molins Carbelo, Gerard Gonzalez Gorgues, Mario Martí Sisó, Robert Munné Mas and Pau Francino
+Have pip installed
 
-Playlist_projecte(project) includes:
+Installing
+First of all you should create a virtual environment inside the project after cloning it from Github.
+$pip install virtualenv
 
-Playlist_App (app):  Application that allows creating personalized playlists automatically using tags provided by the user who is using it. (implementation needed)
+Here you create the environment:
 
-OAuth 2 (app) :  Authentication process using third-party services, in this case Google Cloud Platform.
+$virtualenv venv
 
-It also includes:
+And here you activate it:
+$source /bin/venv/activate
+ 
+Running the app
+Once you are inside the project you can try to run the server by entering this command: 
+$python manage.py runserver
+So you can have a look at what the application looks like in the moment.
+ 
+News
 
-Travis CI configuration
-Heroku
-Dockers (coming soon)
+In this 2nd assignment we implemented Features and we have created a way to work with Spotify API so we can use his methods to develop our application.
+Built With
+Pycharm
+ 
+Version Control in Github: https://github.com/ger4rdgg/playlist_projecte
+ 
+Authors
+Gerard Gonzalez, Robert Munné, Arnau Molins, Pau Francino and Mario Martí
+See also the list of contributors who participated in this project.
