@@ -15,7 +15,7 @@
     <div class="list-group bg-info" >
         {% for song in songs_list %}
             <a class="list-group-item list-group-item-info">
-{#               href="{{ song.get_absolute_url }}">#}
+               href="{{ list.get_absolute_url }}"
                 {{ song }}
             </a>
 {#                <span class="badge">{{ song.move_set.count }}</span>#}

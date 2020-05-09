@@ -52,8 +52,10 @@ def index1(request):
 #         return context
 
 
+
+
 def playlist_list(request):
-    playlist = list.objects.all()
+    playlist = list.objects.order_by('-created_on')
     context = {
         'list': playlist
     }

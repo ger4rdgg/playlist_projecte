@@ -8,8 +8,7 @@
 
             <div class="list-group bg-info" >
                 {% for l in list %}
-                    <a class="list-group-item list-group-item-info">
-        {#               href="{{ song.get_absolute_url }}">#}
+                    <a class="list-group-item list-group-item-info" href="{{ l.get_absolute_url }}">
                         {{ l }}
                     </a>
         {#                <span class="badge">{{ song.move_set.count }}</span>#}
