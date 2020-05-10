@@ -47,11 +47,9 @@
                     <a class="btn btn-primary" href="{% url 'playlist_app:logout' %}">Logout</a>
                 {% else %}
                     <p><a class="text-white">Welcome</a></p>
-{% comment %}
                     <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">
                     Login
                     </a>
-{% endcomment %}
                 {% endif %}
 
             </form>
