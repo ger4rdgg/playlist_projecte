@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50d52c85-6be1-49eb-b256-a1310353a151" name="Default Changelist" comment="crea">
-      <change afterPath="$PROJECT_DIR$/--.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/--.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/--.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/--.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/--.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/--.idea/playlist_projecte.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/--.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/playlist_projecte.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/playlist_projecte.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_app/api_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/playlist_app/api_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/playlist_app/songs_searcher.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/playlist_app/songs_searcher.html" afterDir="false" />
-    </list>
+    <list default="true" id="50d52c85-6be1-49eb-b256-a1310353a151" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +237,7 @@
       <workItem from="1589125821446" duration="793000" />
       <workItem from="1589128267415" duration="296000" />
       <workItem from="1589128978264" duration="407000" />
-      <workItem from="1589129427638" duration="9617000" />
+      <workItem from="1589129427638" duration="9942000" />
     </task>
     <task id="LOCAL-00001" summary="urls.py sense errors">
       <created>1584978644427</created>
@@ -411,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589140633887</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary=".">
+      <created>1589140838100</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1589140838100</updated>
+    </task>
+    <task id="LOCAL-00025" summary=".">
+      <created>1589140960646</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1589140960646</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +467,8 @@
     <MESSAGE value="afegit login required acces to playlist_create.html" />
     <MESSAGE value="estructura projecte millorada i playlists.html maquetat millor" />
     <MESSAGE value="spotify API used to list all songs." />
-    <option name="LAST_COMMIT_MESSAGE" value="spotify API used to list all songs." />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="221" width="800" height="677" key="#DockerProject" timestamp="1585501288286">
@@ -503,10 +507,10 @@
       <screen x="67" y="27" width="1853" height="1068" />
     </state>
     <state x="667" y="118" width="642" height="883" key="#venv/Dockerfile/67.27.1853.1068@67.27.1853.1068" timestamp="1585502220076" />
-    <state x="399" y="104" width="892" height="864" key="CommitChangelistDialog2" timestamp="1589140633479">
+    <state x="399" y="104" width="892" height="864" key="CommitChangelistDialog2" timestamp="1589140960257">
       <screen x="67" y="27" width="1853" height="1068" />
     </state>
-    <state x="399" y="104" width="1234" height="847" key="CommitChangelistDialog2/67.27.1853.1068@67.27.1853.1068" timestamp="1589140633479" />
+    <state x="399" y="104" width="1234" height="847" key="CommitChangelistDialog2/67.27.1853.1068@67.27.1853.1068" timestamp="1589140960257" />
     <state x="425" y="115" width="892" height="864" key="CommitChangelistDialog2/67.27.1853.952@67.27.1853.952" timestamp="1589039136499" />
     <state width="740" height="506" key="DebuggerActiveHint" timestamp="1589015324172">
       <screen x="67" y="27" width="1853" height="952" />
@@ -579,19 +583,19 @@
       <screen x="67" y="27" width="1853" height="1068" />
     </state>
     <state x="544" y="266" width="580" height="564" key="MultipleFileMergeDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1584981405055" />
-    <state x="789" y="252" width="536" height="633" key="RollbackChangesDialog" timestamp="1589129168510">
+    <state x="789" y="252" width="536" height="633" key="RollbackChangesDialog" timestamp="1589140764501">
       <screen x="67" y="27" width="1853" height="1068" />
     </state>
-    <state x="789" y="252" width="478" height="614" key="RollbackChangesDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589129168510" />
+    <state x="789" y="252" width="478" height="614" key="RollbackChangesDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589140764501" />
     <state x="789" y="228" width="536" height="633" key="RollbackChangesDialog/67.27.1853.952@67.27.1853.952" timestamp="1589031908270" />
     <state x="768" y="246" key="SettingsEditor" timestamp="1589129263255">
       <screen x="67" y="27" width="1853" height="1068" />
     </state>
     <state x="768" y="246" key="SettingsEditor/67.27.1853.1068@67.27.1853.1068" timestamp="1589129263255" />
-    <state x="588" y="284" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1589140642684">
+    <state x="588" y="284" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1589140840073">
       <screen x="67" y="27" width="1853" height="1068" />
     </state>
-    <state x="588" y="284" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1068@67.27.1853.1068" timestamp="1589140642684" />
+    <state x="588" y="284" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1068@67.27.1853.1068" timestamp="1589140840073" />
     <state x="588" y="256" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.952@67.27.1853.952" timestamp="1589039138568" />
     <state width="497" height="477" key="XDebugger.FullValuePopup" timestamp="1588861103296">
       <screen x="67" y="27" width="1853" height="952" />
@@ -611,10 +615,10 @@
     </state>
     <state x="641" y="299" width="704" height="580" key="find.popup/67.27.1853.1068@67.27.1853.1068" timestamp="1589098787101" />
     <state x="906" y="342" width="777" height="590" key="find.popup/67.27.1853.952@67.27.1853.952" timestamp="1588972219652" />
-    <state x="719" y="254" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589129177836">
+    <state x="719" y="254" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589140766110">
       <screen x="67" y="27" width="1853" height="1068" />
     </state>
-    <state x="719" y="254" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589129177836" />
+    <state x="719" y="254" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589140766110" />
     <state x="719" y="228" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog/67.27.1853.952@67.27.1853.952" timestamp="1589031914010" />
     <state x="1289" y="274" width="325" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1588955882072">
       <screen x="67" y="27" width="1853" height="952" />
