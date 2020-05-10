@@ -13,4 +13,5 @@ urlpatterns = [
     path('playlists/<int:pk>/delete/', views.playlist_remove, name='list_remove'),
     path('playlists/<int:pk>/', views.list_detail, name='list_detail'),
     path('playlists/searcher', views.songs_searcher, name='songs_searcher'),
+    path('playlists/song_create_ajax', views.song_create_ajax, name='song_create_ajax'),
 ]

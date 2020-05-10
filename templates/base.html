@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+        {% block javascript %}
+        <script>
+            $(document).ready(function() {
+                $('#btnAddSong').click(function() {
+                    var data = new FormData();
+                    var song_name = $(this).val()
+                    data.append('song_name', song_name);
+                    $.ajax({
+                        type: 'POST',
+                        url: 'song_create_ajax',
+                        data: data,
+                        processData: false,
+                        contentType: false,
+                        success: function(json) {
+                            alert(json);
+                        }
+                    })
+                });
+            });
+
+         </script>
+        {% endblock %}
   </head>
 
     <!-- Image and text -->

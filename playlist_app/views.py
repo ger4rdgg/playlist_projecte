@@ -3,7 +3,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from playlist_app.models import song, list
 from django.contrib.auth import logout
-
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from .api_wrapper import get_track_list
 from .forms import ListForm
 
@@ -104,3 +105,16 @@ def songs_searcher(request):
         'filter' : query_filter
     }
     return render(request, 'playlist_app/songs_searcher.html', context)
+
+
+@csrf_exempt
+def song_create_ajax(request):
+    if request.is_ajax():
+        model = song
+        song_name = request.POST['song_name']
+        s = song.objects.create(name=song_name, length=0)
+        model.save(s)
+
+        return True
+
+    return False
