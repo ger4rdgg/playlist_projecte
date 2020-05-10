@@ -12,8 +12,8 @@ app_name = "playlist_app"
 
 urlpatterns = [
     path('', include('social_django.urls', namespace='social')),
-    url(r'^users/', include('users.urls')),
-    url(r'^$', index),
+    path('users/', include('users.urls')),
+    path('', index),
     path('playlists/<int:pk>/', views.list_detail, name='list_detail'),
     path('playlists/delete/<int:pk>/', views.playlist_remove, name='list_remove'),
     path('playlists/edit/<int:pk>', views.playlist_update, name='list_update'),
