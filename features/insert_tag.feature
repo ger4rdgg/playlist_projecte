@@ -12,7 +12,7 @@ I want to : add tags into the ‘search’ or ‘create’ list bar.
     |Llista3         |
 
   Scenario: Show all tags
-    Given I login as user "user" and with password "password"
+    Given I login as user "user" with password "password"
     When I press a tag
     Then Insert a tag into the tag bar
     |name     |

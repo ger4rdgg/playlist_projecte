@@ -10,7 +10,7 @@ Feature: ​ Remove tag
     |tag      |
 
   Scenario: Delete tag
-    Given I login as a user "user" with password "password"
+    Given I login as user "user" with password "password"
     When I delete a tag
     Then I'm not viewing the tag in the search bar
     |name    |

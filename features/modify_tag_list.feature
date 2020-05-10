@@ -5,13 +5,13 @@ Feature: ​ MODIFY TAG LIST
   I want to : add, remove or modify our tags and his moods.
 
   Background: There is a registered admin
-    Given Exists an admin "admin" with password "password"
+    Given Exists a user "user" with password "password"
     And There is a tag list created
     |name     |
     |tag list |
 
   Scenario: Modify tag list
-    Given I login as admin "admin" and with passwowrd "password"
+    Given I login as user "user" with password "password"
     When I modify a tag
     Then I'm viewing the tag list modified
     |name    |

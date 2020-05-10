@@ -11,7 +11,7 @@ I want to : see on our screen all the tags from the tags list.
     |tag3           |
 
   Scenario: Show all tags
-    Given I login as user "user" and with password "password"
+    Given I login as user "user" with password "password"
     When I list tags
     Then I'm viewing a list of tags
     |name     |
