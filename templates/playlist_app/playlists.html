@@ -7,7 +7,7 @@
         <a style="margin-left: 1000px; margin-top: -40px" class="btn btn-info" href="{% url 'playlist_create' %}">Crear nova llista</a>
     </div>
 	<hr>
-    {% if playlist%}
+    {% if list %}
         {% for playlist in list %}
             <div style="background: white; text-align: left; border-radius: 15px; width: 44%; margin-bottom: 7px; height: 90px">
             <h2 style="padding-left: 20px"> Nom de la llista: {{ playlist.name }}</h2>
