@@ -6,4 +6,4 @@ class ListForm(ModelForm):
 
     class Meta:
         model = list
-        fields = ('name', 'songs',)
+        fields = ('name', 'songs', 'description',)

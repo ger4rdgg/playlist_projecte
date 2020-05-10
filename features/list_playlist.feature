@@ -20,3 +20,4 @@ Feature: List Playlists
     |Llista2         |
     |Llista3         |
     And The list contains 3 playlists
+
