@@ -3,8 +3,14 @@
 {% block page_content %}
 
 <form action='.' method='POST'>{%  csrf_token %}
-    <h1> Do you want to delete the playlist "{{ llista.title }}"?</h1>
-    <p><input type='submit' value='Yes' /> <a href='../'></a> </p>
+
+    <div style="text-align: center; margin-top: 200px">
+    <h1 style="font-family: GothamPro; color: white"> Estàs segur que vols esborrar la llista "{{ llista.name }}"?</h1>
+        <div>
+            <p><input style="width: 50px" class="btn btn-info" type='submit' value='Sí' /> <a href='../'></a>
+            <input style="width: 50px" class="btn btn-info" type="submit" value='No' /> <a href='../'></a> </p>
+        </div>
+    </div>
 </form>
 
 {% endblock %}
