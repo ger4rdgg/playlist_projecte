@@ -5,8 +5,10 @@ from playlist_app.models import song, list
 from django.contrib.auth import logout
 from .forms import ListForm
 
+
 def index(request):
-	return render(request, 'index.html', {})
+    return render(request, 'index.html', {})
+
 
 def index1(request):
     context = {
@@ -17,12 +19,14 @@ def index1(request):
     return render(request, 'playlist_app/index.html', context,
                   {'nsongs': song.objects.count()})
 
+
 def playlist_list(request):
     playlist = list.objects.order_by('-created_on')
-    context= {
+    context = {
         'list': playlist
     }
-    return render(request, 'playlists.html', context)
+    return render(request, 'playlist_app/playlists.html', context)
+
 
 @login_required
 def playlist_create(request):
@@ -43,11 +47,10 @@ def playlist_create(request):
 
     # else:
     #     form = song_form()
-    return render(request, 'list_form.html', {"form": form})
+    return render(request, 'playlist_app/list_form.html', {"form": form})
 
 
 def playlist_update(request, pk=None):
-
     llista = get_object_or_404(list, pk=pk)
 
     if request.method == "POST":
@@ -59,7 +62,8 @@ def playlist_update(request, pk=None):
             return redirect('playlists')
     else:
         form = ListForm(instance=llista)
-    return render(request, 'list_form.html', {"form": form})
+    return render(request, 'playlist_app/list_form.html', {"form": form})
+
 
 @login_required
 def list_detail(request, pk=None):
@@ -69,7 +73,7 @@ def list_detail(request, pk=None):
         'llista': llista,
 
     }
-    return render(request, 'list_detail.html', context)
+    return render(request, 'playlist_app/list_detail.html', context)
 
 
 def playlist_remove(request, pk=None):
@@ -81,5 +85,4 @@ def playlist_remove(request, pk=None):
     context = {
         "llista": llista
     }
-    return render(request, "playlist_delete.html", context)
-
+    return render(request, "playlist_app/playlist_delete.html", context)

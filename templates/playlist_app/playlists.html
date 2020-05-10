@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <div>
+	    <h1 style="color: white; padding-top: 10px; font-family: 'GothamPro'">Play Lists:</h1>
+        <a style="margin-left: 1000px; margin-top: -40px" class="btn btn-info" href="{% url 'playlist_create' %}">Crear nova llista</a>
+    </div>
+	<hr>
+    {% if playlist%}
+        {% for playlist in list %}
+            <div style="background: white; text-align: left; border-radius: 15px; width: 44%; margin-bottom: 7px; height: 90px">
+            <h2 style="padding-left: 20px"> Nom de la llista: {{ playlist.name }}</h2>
+            {% if playlist.description is None %}
+                <p style="padding-left: 20px">No hi ha descripció</p>
+            {% else %}
+                <p style="padding-left: 20px">Descripció: {{ playlist.description }}</p>
+            {% endif %}
+            <p style="padding-left: 460px; margin-top: -70px;"><a class="btn btn-outline-info" href="/playlists/{{playlist.pk}}/" role="button">Veure</a></p>
+            </div>
+	    {% endfor %}
+    {% else %}
+        <p style="padding-left: 20px; color: white">No hi ha llistes disponibles</p>
+    {% endif %}
+
+
+</div>
+{% endblock %}

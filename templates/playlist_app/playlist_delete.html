@@ -1,0 +1,16 @@
+{%  extends 'base.html' %}
+
+{% block page_content %}
+
+<form action='' method='POST'>{%  csrf_token %}
+
+    <div style="text-align: center; margin-top: 200px">
+    <h1 style="font-family: GothamPro; color: white"> Estàs segur que vols esborrar la llista "{{ llista.name }}"?</h1>
+        <div>
+            <p><input style="width: 50px" class="btn btn-info" type='submit' value='Sí' /> <a href='../../playlist_app'></a>
+            <input style="width: 50px" class="btn btn-info" type="submit" value='No' /> <a href='../../playlist_app'></a> </p>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
