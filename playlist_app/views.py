@@ -86,3 +86,19 @@ def playlist_remove(request, pk=None):
         "llista": llista
     }
     return render(request, "playlist_app/playlist_delete.html", context)
+
+def songs_searcher(request):
+    search_query = request.GET.get('q')
+    query_filter = request.GET.get('filter')
+    
+    if not query_filter:
+        query_filter = 'track'
+
+    count, items = get_track_list(search_query, query_filter)
+    context = {
+        'count' : count,
+        'items': items,
+        'q': search_query,
+        'filter' : query_filter
+    }
+    return render(request, 'playlist_app/songs_searcher.html', context)
