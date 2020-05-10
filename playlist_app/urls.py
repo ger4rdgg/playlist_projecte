@@ -21,5 +21,5 @@ urlpatterns = [
     path('playlists/list', views.playlist_list, name='playlist_list'),
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
     path('playlists/searcher', views.songs_searcher, name='songs_searcher'),
-
+    path('playlists/song_create_ajax', views.song_create_ajax, name='song_create_ajax'),
 ]
