@@ -4,7 +4,7 @@ import requests
 SPOTIFY_ENDPOINT  = 'https://api.spotify.com'
 SEARCH_ENDPOINT = '/v1/search'
 
-SPOTIFY_TOKEN = "BQBdFaIG3WUV6jzFGpEIqKJZzuldykRIgecVZ-zZdsEAn6pHUt9nPd6BRmFei-9UXYehk9HpOZIcviV5hMU"
+SPOTIFY_TOKEN = "BQDp4Xv8SFM6r0h4ceOBTy5n5msqRcm3CMfb1RZPlmqkHBdw6CrwIf-P8umvbcXOO_8isZhIEwQt12DCDmw"
 
 request_headers = {
                 'content-type': "application/json"

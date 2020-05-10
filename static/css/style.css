@@ -41,8 +41,8 @@ ul.results {
 }
 
 ul.results li {
-    border-bottom: 1px solid #ddd;
-    padding: 8px 0px 8px 0px;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0px 8px 0px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
