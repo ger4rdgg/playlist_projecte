@@ -6,7 +6,7 @@ from django.test import TestCase
 from .models import *
 
 
-class RestaurantReviewTestCase(TestCase):
+class playlistProjectTestCase(TestCase):
     global user1
     global user2
     global song1
@@ -33,14 +33,11 @@ class RestaurantReviewTestCase(TestCase):
             created_on=datetime.now,
             user=user2)
 
-    # def tests_creation_model_instances(self):
-    #     """The average review for a restaurant with 3 reviews is properly computed"""
-    #
-    #     l = list.objects.get(name="CHILL")
-    #
-    #     self.assertTrue(l)
-    #
-    # def test_average_no_review(self):
-    #     """The average review for a restaurant without reviews is 0"""
-    #     restaurant = Restaurant.objects.get(name="Unknown Restaurant")
-    #     self.assertEqual(restaurant.averageRating(), 0)
+    def tests_creation_model_instances(self):
+        """The average review for a restaurant with 3 reviews is properly computed"""
+
+        l = list.objects.get(name="CHILL")
+
+        self.assertTrue(l)
+
+
