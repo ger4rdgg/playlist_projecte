@@ -1,4 +1,4 @@
-Playlist Project
+#Playlist Project
 
 This is a project for the web project subject, where we are working with django to implement a web 2.0 page. The idea of ​​our page consists of an automatic playlist generator for spotify through the introduction of desired tags by the user. This is the 2nd order of the project.
 Prerequisites
