@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+gunicorn = "<20.1.0,>=20.0.4"
+behave-django = "==1.*"
+Django = "<3.1.0,>=3.0.5"
+social-auth-app-django = ">=3.1.0,<3.2.0"
+django-crispy-forms = "*"
+
+[requires]
+python_version = "3.7"
