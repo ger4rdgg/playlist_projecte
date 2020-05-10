@@ -26,7 +26,7 @@ class list(models.Model):
     created_on = models.DateTimeField(default=datetime.now)
 
     def get_absolute_url(self):
-        return reverse('playlist_app:list_update', args=[self.id])
+        return reverse('playlist_app:list_detail', args=[self.id])
 
     def __str__(self):
         return "name:{0}, description:{1}, length:{2}".format(self.name, self.description, self.length)
