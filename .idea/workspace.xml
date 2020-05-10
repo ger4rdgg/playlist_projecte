@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50d52c85-6be1-49eb-b256-a1310353a151" name="Default Changelist" comment="crea">
+      <change afterPath="$PROJECT_DIR$/--.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/--.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/--.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/--.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/--.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/--.idea/playlist_projecte.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/--.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/playlist_projecte.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/playlist_projecte.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playlist_app/api_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/playlist_app/api_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/playlist_app/songs_searcher.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/playlist_app/songs_searcher.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Gherkin feature file" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1ZDhWw4ddDOIWDfsyegAyUJxspI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/templates/playlist_app" />
+      <recent name="$PROJECT_DIR$/templates/users" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/playlist_app/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.playlist_projecte">
+    <configuration name="Test: playlist_app.tests.RestaurantReviewTestCase.tests_creation_model_instances" type="DjangoTestsConfigurationType" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="playlist_app.tests.RestaurantReviewTestCase.tests_creation_model_instances" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="playlist_projecte" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="playlist_app" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="playlist_projecte" type="Python.DjangoServer" factoryName="Django server">
+      <module name="playlist_projecte" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="playlist_projecte.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="DockerProject">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="latest" />
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="playlist_project" />
+          <option name="entrypoint" value="" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8000" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="8000" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.playlist_projecte" />
+      <item itemvalue="Django Server.playlist_app" />
+      <item itemvalue="Django tests.Test: playlist_app.tests.RestaurantReviewTestCase.tests_creation_model_instances" />
+      <item itemvalue="Django tests.Test: playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances" />
+      <item itemvalue="Docker.Dockerfile" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Django tests.Test: playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances" />
+        <item itemvalue="Django tests.Test: playlist_app.tests.RestaurantReviewTestCase.tests_creation_model_instances" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Django tests.Test: playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50d52c85-6be1-49eb-b256-a1310353a151" name="Default Changelist" comment="" />
+      <created>1584379606645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584379606645</updated>
+      <workItem from="1584379608836" duration="1388000" />
+      <workItem from="1584455532944" duration="5013000" />
+      <workItem from="1584520457998" duration="3089000" />
+      <workItem from="1584963967754" duration="5498000" />
+      <workItem from="1584981246474" duration="816000" />
+      <workItem from="1584982692695" duration="6202000" />
+      <workItem from="1585391540596" duration="76000" />
+      <workItem from="1585391658444" duration="9112000" />
+      <workItem from="1585491885891" duration="2166000" />
+      <workItem from="1585494108812" duration="11000" />
+      <workItem from="1585494382231" duration="9372000" />
+      <workItem from="1585505071264" duration="2152000" />
+      <workItem from="1585508783079" duration="1419000" />
+      <workItem from="1585925003199" duration="65000" />
+      <workItem from="1586447647385" duration="2520000" />
+      <workItem from="1586531845632" duration="630000" />
+      <workItem from="1587283632820" duration="603000" />
+      <workItem from="1587406890000" duration="362000" />
+      <workItem from="1587455737302" duration="52000" />
+      <workItem from="1587456906541" duration="6313000" />
+      <workItem from="1588242146324" duration="2538000" />
+      <workItem from="1588329027531" duration="58000" />
+      <workItem from="1588333039409" duration="15713000" />
+      <workItem from="1588416827986" duration="12534000" />
+      <workItem from="1588663983349" duration="3936000" />
+      <workItem from="1588671730836" duration="4637000" />
+      <workItem from="1588677132027" duration="11384000" />
+      <workItem from="1588773742568" duration="10934000" />
+      <workItem from="1588831852800" duration="24117000" />
+      <workItem from="1588952678222" duration="18267000" />
+      <workItem from="1589011446725" duration="16992000" />
+      <workItem from="1589063441254" duration="514000" />
+      <workItem from="1589096188111" duration="4849000" />
+      <workItem from="1589103166795" duration="844000" />
+      <workItem from="1589104111045" duration="695000" />
+      <workItem from="1589116673079" duration="1151000" />
+      <workItem from="1589117940539" duration="4142000" />
+      <workItem from="1589125821446" duration="793000" />
+      <workItem from="1589128267415" duration="296000" />
+      <workItem from="1589128978264" duration="407000" />
+      <workItem from="1589129427638" duration="9617000" />
+    </task>
+    <task id="LOCAL-00001" summary="urls.py sense errors">
+      <created>1584978644427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584978644427</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'master' into robert&#10;&#10;# Conflicts:&#10;#&#9;requirements.txt">
+      <created>1584980573368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584980573368</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge branch 'robert'&#10;&#10;# Conflicts:&#10;#&#9;playlist_app/templates/login.html&#10;#&#9;playlist_projecte/urls.py&#10;#&#9;requirements.txt">
+      <created>1584981460050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584981460050</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'robert'&#10;&#10;# Conflicts:&#10;#&#9;playlist_app/templates/login.html&#10;#&#9;playlist_projecte/urls.py&#10;#&#9;requirements.txt">
+      <created>1585409493266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585409493266</updated>
+    </task>
+    <task id="LOCAL-00005" summary="afegeixo Dockerfile&#10;creo la imatge:&#10;docker build -t robertmunne/playlist .&#10;pujo la imatge al docker hub:&#10;docker login&#10;docker push robertmunne/playlist&#10;faig el contenidor:&#10;docker run robertmunne/playlist:latest">
+      <created>1585509474862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585509474862</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Afegeixo estructura que ha de tenir el projecte">
+      <created>1588242391654</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588242391654</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Login, logout a header page, carregar bootstrap a static, crear index.html(home)">
+      <created>1588355110619</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588355110619</updated>
+    </task>
+    <task id="LOCAL-00008" summary="preparo CRUD de songs, vistes, url's i templates">
+      <created>1588452554413</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588452554413</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Afegeixo bdd perque he fet un mock">
+      <created>1588670340724</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588670340724</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Aplicats canvis seguits del repositori del Roberto per fer el behave.">
+      <created>1588774209402</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588774209402</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Llista songs creada">
+      <created>1588835659541</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588835659541</updated>
+    </task>
+    <task id="LOCAL-00012" summary="songs.html arreclat, falta acabar de maquetar.">
+      <created>1588836856986</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588836856986</updated>
+    </task>
+    <task id="LOCAL-00013" summary="falta fer create playlist">
+      <created>1588843313721</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588843313721</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Error http://127.0.0.1:8000/playlists/create/ no mostra res per pantalla">
+      <created>1588864667325</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588864667325</updated>
+    </task>
+    <task id="LOCAL-00015" summary="playlist_create.html millorat, falta fer el ToDo.">
+      <created>1588972811350</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588972811350</updated>
+    </task>
+    <task id="LOCAL-00016" summary="el mètode save ja grava les noves instàncie">
+      <created>1589017270779</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589017270779</updated>
+    </task>
+    <task id="LOCAL-00017" summary="llistes llistades correctament, falta acabar de maquetar.">
+      <created>1589020222425</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1589020222425</updated>
+    </task>
+    <task id="LOCAL-00018" summary="pujo bdd">
+      <created>1589031298481</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1589031298481</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Acabada la creació de llistes.&#10;Afegit camp descripció al model de list.&#10;&#10;Heu de maquetar: &#10;playlists_list.html--&gt; {{l}} canviar per maquetació bootsrap&#10;playlist_create.html --&gt; maquetar bootsrap">
+      <created>1589039136668</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1589039136668</updated>
+    </task>
+    <task id="LOCAL-00020" summary="crea">
+      <created>1589103560985</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1589103560985</updated>
+    </task>
+    <task id="LOCAL-00021" summary="afegit login required acces to playlist_create.html">
+      <created>1589119968646</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1589119968646</updated>
+    </task>
+    <task id="LOCAL-00022" summary="estructura projecte millorada i playlists.html maquetat millor">
+      <created>1589122076005</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1589122076005</updated>
+    </task>
+    <task id="LOCAL-00023" summary="spotify API used to list all songs.">
+      <created>1589140633887</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1589140633887</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="urls.py sense errors" />
+    <MESSAGE value="Merge branch 'master' into robert&#10;&#10;# Conflicts:&#10;#&#9;requirements.txt" />
+    <MESSAGE value="Merge branch 'robert'&#10;&#10;# Conflicts:&#10;#&#9;playlist_app/templates/login.html&#10;#&#9;playlist_projecte/urls.py&#10;#&#9;requirements.txt" />
+    <MESSAGE value="afegeixo Dockerfile&#10;creo la imatge:&#10;docker build -t robertmunne/playlist .&#10;pujo la imatge al docker hub:&#10;docker login&#10;docker push robertmunne/playlist&#10;faig el contenidor:&#10;docker run robertmunne/playlist:latest" />
+    <MESSAGE value="Afegeixo estructura que ha de tenir el projecte" />
+    <MESSAGE value="Login, logout a header page, carregar bootstrap a static, crear index.html(home)" />
+    <MESSAGE value="preparo CRUD de songs, vistes, url's i templates" />
+    <MESSAGE value="Afegeixo bdd perque he fet un mock" />
+    <MESSAGE value="Aplicats canvis seguits del repositori del Roberto per fer el behave." />
+    <MESSAGE value="Llista songs creada" />
+    <MESSAGE value="songs.html arreclat, falta acabar de maquetar." />
+    <MESSAGE value="falta fer create playlist" />
+    <MESSAGE value="Error http://127.0.0.1:8000/playlists/create/ no mostra res per pantalla" />
+    <MESSAGE value="playlist_create.html millorat, falta fer el ToDo." />
+    <MESSAGE value="el mètode save ja grava les noves instàncie" />
+    <MESSAGE value="llistes llistades correctament, falta acabar de maquetar." />
+    <MESSAGE value="pujo bdd" />
+    <MESSAGE value="Acabada la creació de llistes.&#10;Afegit camp descripció al model de list.&#10;&#10;Heu de maquetar: &#10;playlists_list.html--&gt; {{l}} canviar per maquetació bootsrap&#10;playlist_create.html --&gt; maquetar bootsrap" />
+    <MESSAGE value="crea" />
+    <MESSAGE value="afegit login required acces to playlist_create.html" />
+    <MESSAGE value="estructura projecte millorada i playlists.html maquetat millor" />
+    <MESSAGE value="spotify API used to list all songs." />
+    <option name="LAST_COMMIT_MESSAGE" value="spotify API used to list all songs." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="221" width="800" height="677" key="#DockerProject" timestamp="1585501288286">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="588" y="221" width="800" height="677" key="#DockerProject/67.27.1853.1068@67.27.1853.1068" timestamp="1585501288286" />
+    <state x="747" y="116" width="642" height="883" key="#Dockerfile" timestamp="1585506629138">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="747" y="116" width="642" height="883" key="#Dockerfile/67.27.1853.1068@67.27.1853.1068" timestamp="1585506629138" />
+    <state x="655" y="183" width="666" height="753" key="#Test:_playlist_app.tests.RestaurantReviewTestCase.tests_creation_model_instances" timestamp="1589103922182">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="655" y="183" width="666" height="753" key="#Test:_playlist_app.tests.RestaurantReviewTestCase.tests_creation_model_instances/67.27.1853.1068@67.27.1853.1068" timestamp="1589103922182" />
+    <state x="655" y="183" width="666" height="753" key="#Test:_playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances" timestamp="1589117906134">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="655" y="183" width="666" height="753" key="#Test:_playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances/67.27.1853.1068@67.27.1853.1068" timestamp="1589117906134" />
+    <state x="287" y="187" width="1175" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589129265547">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="287" y="187" width="1175" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589129265546" />
+    <state x="689" y="362" width="598" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588417007563">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="689" y="362" width="598" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1068@67.27.1853.1068" timestamp="1588417007563" />
+    <state x="726" y="309" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588348023422">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="726" y="309" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1588348023422" />
+    <state x="655" y="141" width="666" height="837" key="#playlist_project" timestamp="1588690533617">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="655" y="141" width="666" height="837" key="#playlist_project/67.27.1853.1068@67.27.1853.1068" timestamp="1588690533617" />
+    <state x="667" y="118" width="642" height="883" key="#venv/Dockerfile" timestamp="1585502220076">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="667" y="118" width="642" height="883" key="#venv/Dockerfile/67.27.1853.1068@67.27.1853.1068" timestamp="1585502220076" />
+    <state x="399" y="104" width="892" height="864" key="CommitChangelistDialog2" timestamp="1589140633479">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="399" y="104" width="1234" height="847" key="CommitChangelistDialog2/67.27.1853.1068@67.27.1853.1068" timestamp="1589140633479" />
+    <state x="425" y="115" width="892" height="864" key="CommitChangelistDialog2/67.27.1853.952@67.27.1853.952" timestamp="1589039136499" />
+    <state width="740" height="506" key="DebuggerActiveHint" timestamp="1589015324172">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state width="740" height="506" key="DebuggerActiveHint/67.27.1853.952@67.27.1853.952" timestamp="1589015324172" />
+    <state x="287" y="118" width="1482" height="791" key="DiffContextDialog" timestamp="1589103550095">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="287" y="118" width="1482" height="884" key="DiffContextDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589103550095" />
+    <state x="287" y="108" width="1482" height="791" key="DiffContextDialog/67.27.1853.952@67.27.1853.952" timestamp="1588972723112" />
+    <state x="198" y="298" width="839" height="516" key="EnvironmentVariablesDialog" timestamp="1588689487362">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="198" y="298" width="839" height="516" key="EnvironmentVariablesDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1588689487362" />
+    <state x="815" y="298" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589129086259">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="815" y="298" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1068@67.27.1853.1068" timestamp="1589129086259" />
+    <state x="815" y="269" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.952@67.27.1853.952" timestamp="1588968390540" />
+    <state width="881" height="243" key="GridCell.Tab.0.bottom" timestamp="1589131981769">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state width="881" height="243" key="GridCell.Tab.0.bottom/67.27.1853.1068@67.27.1853.1068" timestamp="1589131981769" />
+    <state width="1807" height="235" key="GridCell.Tab.0.bottom/67.27.1853.952@67.27.1853.952" timestamp="1589037471797" />
+    <state width="881" height="243" key="GridCell.Tab.0.center" timestamp="1589131981765">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state width="881" height="243" key="GridCell.Tab.0.center/67.27.1853.1068@67.27.1853.1068" timestamp="1589131981765" />
+    <state width="1807" height="235" key="GridCell.Tab.0.center/67.27.1853.952@67.27.1853.952" timestamp="1589037471795" />
+    <state width="881" height="243" key="GridCell.Tab.0.left" timestamp="1589131981764">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state width="881" height="243" key="GridCell.Tab.0.left/67.27.1853.1068@67.27.1853.1068" timestamp="1589131981764" />
+    <state width="1807" height="235" key="GridCell.Tab.0.left/67.27.1853.952@67.27.1853.952" timestamp="1589037471795" />
+    <state width="881" height="243" key="GridCell.Tab.0.right" timestamp="1589131981766">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state width="881" height="243" key="GridCell.Tab.0.right/67.27.1853.1068@67.27.1853.1068" timestamp="1589131981766" />
+    <state width="1807" height="235" key="GridCell.Tab.0.right/67.27.1853.952@67.27.1853.952" timestamp="1589037471796" />
+    <state width="1167" height="235" key="GridCell.Tab.1.bottom" timestamp="1589037471492">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state width="1807" height="350" key="GridCell.Tab.1.bottom/67.27.1853.1068@67.27.1853.1068" timestamp="1588696751670" />
+    <state width="1167" height="235" key="GridCell.Tab.1.bottom/67.27.1853.952@67.27.1853.952" timestamp="1589037471492" />
+    <state width="1167" height="235" key="GridCell.Tab.1.center" timestamp="1589037471491">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state width="1807" height="350" key="GridCell.Tab.1.center/67.27.1853.1068@67.27.1853.1068" timestamp="1588696751668" />
+    <state width="1167" height="235" key="GridCell.Tab.1.center/67.27.1853.952@67.27.1853.952" timestamp="1589037471491" />
+    <state width="1167" height="235" key="GridCell.Tab.1.left" timestamp="1589037471491">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state width="1807" height="350" key="GridCell.Tab.1.left/67.27.1853.1068@67.27.1853.1068" timestamp="1588696751667" />
+    <state width="1167" height="235" key="GridCell.Tab.1.left/67.27.1853.952@67.27.1853.952" timestamp="1589037471491" />
+    <state width="1167" height="235" key="GridCell.Tab.1.right" timestamp="1589037471492">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state width="1807" height="350" key="GridCell.Tab.1.right/67.27.1853.1068@67.27.1853.1068" timestamp="1588696751669" />
+    <state width="1167" height="235" key="GridCell.Tab.1.right/67.27.1853.952@67.27.1853.952" timestamp="1589037471492" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1588415801161">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1853.1068@67.27.1853.1068" timestamp="1588415801161" />
+    <state x="88" y="97" width="1482" height="791" key="MergeDialog" timestamp="1588961289255">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state x="88" y="106" width="1636" height="884" key="MergeDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1584981403462" />
+    <state x="88" y="97" width="1482" height="791" key="MergeDialog/67.27.1853.952@67.27.1853.952" timestamp="1588961289255" />
+    <state x="544" y="266" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1584981405055">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="544" y="266" width="580" height="564" key="MultipleFileMergeDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1584981405055" />
+    <state x="789" y="252" width="536" height="633" key="RollbackChangesDialog" timestamp="1589129168510">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="789" y="252" width="478" height="614" key="RollbackChangesDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589129168510" />
+    <state x="789" y="228" width="536" height="633" key="RollbackChangesDialog/67.27.1853.952@67.27.1853.952" timestamp="1589031908270" />
+    <state x="768" y="246" key="SettingsEditor" timestamp="1589129263255">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="768" y="246" key="SettingsEditor/67.27.1853.1068@67.27.1853.1068" timestamp="1589129263255" />
+    <state x="588" y="284" width="800" height="556" key="Vcs.Push.Dialog.v2" timestamp="1589140642684">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="588" y="284" width="800" height="551" key="Vcs.Push.Dialog.v2/67.27.1853.1068@67.27.1853.1068" timestamp="1589140642684" />
+    <state x="588" y="256" width="800" height="556" key="Vcs.Push.Dialog.v2/67.27.1853.952@67.27.1853.952" timestamp="1589039138568" />
+    <state width="497" height="477" key="XDebugger.FullValuePopup" timestamp="1588861103296">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state width="497" height="477" key="XDebugger.FullValuePopup/67.27.1853.952@67.27.1853.952" timestamp="1588861103296" />
+    <state x="740" y="300" width="501" height="511" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1585506409442">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="740" y="300" width="501" height="511" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/67.27.1853.1068@67.27.1853.1068" timestamp="1585506409442" />
+    <state x="761" y="480" width="448" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589129473465">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="761" y="480" width="448" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1068@67.27.1853.1068" timestamp="1589129473465" />
+    <state x="761" y="431" width="458" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.952@67.27.1853.952" timestamp="1588961341515" />
+    <state x="641" y="299" width="704" height="580" key="find.popup" timestamp="1589098787101">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="641" y="299" width="704" height="580" key="find.popup/67.27.1853.1068@67.27.1853.1068" timestamp="1589098787101" />
+    <state x="906" y="342" width="777" height="590" key="find.popup/67.27.1853.952@67.27.1853.952" timestamp="1588972219652" />
+    <state x="719" y="254" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589129177836">
+      <screen x="67" y="27" width="1853" height="1068" />
+    </state>
+    <state x="719" y="254" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog/67.27.1853.1068@67.27.1853.1068" timestamp="1589129177836" />
+    <state x="719" y="228" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog/67.27.1853.952@67.27.1853.952" timestamp="1589031914010" />
+    <state x="1289" y="274" width="325" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1588955882072">
+      <screen x="67" y="27" width="1853" height="952" />
+    </state>
+    <state x="1289" y="274" width="325" height="455" key="refactoring.ChangeSignatureDialog/67.27.1853.952@67.27.1853.952" timestamp="1588955882072" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/playlist_projecte$Test__playlist_app_tests_playlistProjectTestCase_tests_creation_model_instances.coverage" NAME="Test: playlist_app.tests.playlistProjectTestCase.tests_creation_model_instances Coverage Results" MODIFIED="1589104335002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/playlist_projecte$Test__playlist_app_tests_RestaurantReviewTestCase_tests_creation_model_instances.coverage" NAME="Test: playlist_app.tests.RestaurantReviewTestCase.tests_creation_model_instances Coverage Results" MODIFIED="1589103189249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
