@@ -1,13 +1,12 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import DetailView
-from playlist_app.forms import song_form
 from playlist_app.models import *
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import CreateView, UpdateView
 from .forms import song_form, ListForm
-
+from .api_wrapper import get_track_list
 
 def index(request):
     return render(request, 'index.html', {})
@@ -52,8 +51,6 @@ def index1(request):
 #         return context
 
 
-
-
 def playlist_list(request):
     playlist = list.objects.order_by('-created_on')
     context = {
@@ -78,8 +75,6 @@ def playlist_create(request):
             form.save_m2m()
             return redirect('playlist_app:playlist_list')  # ToDo: fer que el botó guardar funcioni i es mostri la llargada de la llista
 
-    # else:
-    #     form = song_form()
     return render(request, 'playlist_app/playlist_create.html', {"form": form})
 
 
@@ -129,5 +124,18 @@ def playlist_remove(request, pk=None):
     }
     return render(request, "playlist_app/playlist_delete.html", context)
 
+def songs_searcher(request):
+    search_query = request.GET.get('q')
+    query_filter = request.GET.get('filter')
+    
+    if not query_filter:
+        query_filter = 'track'
 
-
+    count, items = get_track_list(search_query, query_filter)
+    context = {
+        'count' : count,
+        'items': items,
+        'q': search_query,
+        'filter' : query_filter
+    }
+    return render(request, 'playlist_app/songs_searcher.html', context)

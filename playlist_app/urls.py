@@ -20,5 +20,6 @@ urlpatterns = [
     path('playlists/create/', views.playlist_create, name='playlist_create'),
     path('playlists/list', views.playlist_list, name='playlist_list'),
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
+    path('playlists/searcher', views.songs_searcher, name='songs_searcher'),
 
 ]

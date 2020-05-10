@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
 urlpatterns = [
-    path('', include('social_django.urls', namespace='social')),
-    path('admin/', admin.site.urls),
     path('', include('playlist_app.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('social_django.urls', namespace='social'))
 
 ]
