@@ -1,0 +1,32 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+{#    {% if user.is_authenticated %}(<a href="{% url 'playlist_app:playlist_create' %}">add</a>){% endif %}#}
+    <div class="createForm">
+        <form action="" method="post">
+        <h1>Crear nova llista</h1>
+        {% csrf_token %}
+            {{ form.as_p}}
+            <button class="btn btn-primary" type="submit">GUARDAR</button>
+        </form>
+    </div>
+{% endblock %}
+
+{% comment %}
+                        <div class="help">Hold down “Control”, or “Command” on a Mac, to select more than one.</div>
+                </div>
+        </div>
+</fieldset>
+<div class="submit-row">
+<input type="submit" value="Save" class="default" name="_save">
+<input type="submit" value="Save and add another" name="_addanother">
+<input type="submit" value="Save and continue editing" name="_continue">
+</div>
+    <script type="text/javascript" id="django-admin-form-add-constants" src="/static/admin/js/change_form.js" data-model-name="list">
+    </script>
+<script type="text/javascript" id="django-admin-prepopulated-fields-constants" src="/static/admin/js/prepopulate_init.js" data-prepopulated-fields="[]">
+</script>
+</div>
+{% endcomment %}
+
+
