@@ -16,11 +16,13 @@ class song_form(forms.ModelForm):
         model = list
         fields = (
             "name",
-            "description"
+            "description",
+            "songs"
         )
         labels = {
             "name": "Nom",
-            "description": "Descripció"
+            "description": "Descripció",
+            "songs": "Cançons"
 
         }
 
@@ -28,4 +30,4 @@ class song_form(forms.ModelForm):
 class ListForm(ModelForm):
     class Meta:
         model = list
-        fields = ('name', 'description')
+        fields = ('name', 'description', 'songs')

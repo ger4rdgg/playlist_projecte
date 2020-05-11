@@ -1,6 +1,6 @@
 {%  extends 'base.html' %}
 
-{% block content %}
+{% block page_content %}
     {% if user.is_authenticated %}<a href="{% url 'playlist_app:playlist_create' %}"></a>){% endif %}
     <div class="createForm">
         <form action="" method="post">

@@ -10,27 +10,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 
         {% block javascript %}
         <script>
+        //$("input[type=checkbox]:checked").each(
             $(document).ready(function() {
-                $('#btnAddSong').click(function() {
-                    var data = new FormData();
-                    var song_name = $(this).val()
-                    data.append('song_name', song_name);
-                    $.ajax({
-                        type: 'POST',
-                        url: 'song_create_ajax',
-                        data: data,
-                        processData: false,
-                        contentType: false,
-                        success: function(json) {
-                            alert(json);
-                        }
+                $('#btnAddSong').click(function()
+                {
+                    $("input[type=checkbox]:checked").each(
+                    function() {
+                        var data = new FormData();
+                        var song_name = $(this).attr("name");
+                        data.append('song_name', song_name);
+                        $.ajax({
+                            type: 'POST',
+                            url: 'song_create_ajax',
+                            data: data,
+                            processData: false,
+                            contentType: false,
+                            success: function(json) {
+                                alert(json);
+                            }
+                        });
                     })
-                });
+                })
             });
+
+
 
          </script>
         {% endblock %}
@@ -52,7 +59,7 @@
   {% endblock %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+{#    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>#}
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

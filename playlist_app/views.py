@@ -115,6 +115,6 @@ def song_create_ajax(request):
         s = song.objects.create(name=song_name, length=0)
         model.save(s)
 
-        return True
+        return HttpResponse("Las canciones se han añadido correctamente")
 
-    return False
+    return HttpResponse("Se ha producido un error al añadir las canciones")
