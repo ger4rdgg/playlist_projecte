@@ -53,7 +53,8 @@ body{
 }
 .editform{
 
-    background: white;
+    background: #35A9A2;
+    color: white;
     width: 400px;
     padding: 40px;
     position: absolute;
