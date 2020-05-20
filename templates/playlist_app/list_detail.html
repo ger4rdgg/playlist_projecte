@@ -1,25 +1,29 @@
 {% extends "base.html" %}
-{% block title %}Playlist_projecte - {{ llista.name }}{% endblock %}
+{% block title %}Playlist_projecte - {{ llista.name }}{% endblock title%}
 {% block page_content %}
-<div class="detail">
-    <span vocab="http://schema.org/" typeof="Restaurant">
-    <h1>
-        <span property="name">{{ llista.name }}</span>
-{#        {{ llista.name }}#}
-    </h1>
-    <p style="padding-left: 315px; margin-top: -45px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/edit/" role="button">Editar</a></p>
-    <p style="padding-left: 210px; margin-top: -54px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/delete/" role="button">Esborrar</a></p>
-    {% if llista.songs.exists %}
-        <h2>Cançons:</h2>
+<div vocab="http://schema.org/" typeof="MusicPlaylist">
+    <div class="detail">
+{#        <span vocab="http://schema.org/MusicPlaylist" typeof="MusicPlaylist">#}
+        <h1><span property="name" name="name">{{ llista.name }}</span></h1>
+        <p style="padding-left: 315px; margin-top: -45px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/edit/" role="button">Editar</a></p>
+        <p style="padding-left: 210px; margin-top: -54px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/delete/" role="button">Esborrar</a></p>
+        {% if llista.songs.exists %}
+            <section>
+                <span property="name" style="display: none">{{ llista.songs }}</span>
+                <h2><strong>Cançons:</strong></h2>
 
-        {% for song in llista.songs.all %}
-            <ul>{{ song.name }}</ul>
+                {% for song in llista.songs.all %}
+                    <ul>{{ song.name }}</ul>
 
-        {% endfor %}
-    {% else %}
-        <p>No hi ha cançons</p>
-    </span>
-    {% endif %}
+                {% endfor %}
+            </section>
+        {% else %}
+            <p>No hi ha cançons</p>
+{#        </span>#}
 
+        {% endif %}
+
+    </div>
 </div>
-{% endblock %}
+
+{% endblock page_content %}
