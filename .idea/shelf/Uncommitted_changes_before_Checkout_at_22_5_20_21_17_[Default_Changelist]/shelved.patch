@@ -1,0 +1,133 @@
+Index: templates/playlist_app/detail.html
+===================================================================
+--- templates/playlist_app/detail.html	(revision eba31c05988b6e68b95b646e0b1adf65ac354ce5)
++++ templates/playlist_app/detail.html	(revision eba31c05988b6e68b95b646e0b1adf65ac354ce5)
+@@ -1,28 +0,0 @@
+-{% extends "base.html" %}
+-{% load static %}
+-{% block content %}
+-    <span vocab="http://schema.org/" typeof="MusicPlaylist">
+-        <h1>
+-            <span property="name">{{ list.name }}</span>
+-            (<a href="{% url 'playlist_app:list_update' list.pk %}">edit</a>)
+-        </h1>
+-        <h2>
+-            Track
+-            {%  if  user.is_authenticated  %}
+-                (<a  href="{%  url  'playlist_app:song_create_ajax' %}">add</a>)
+-            {%  endif  %}
+-        </h2>
+-        <ul>
+-            {%  for  song  in  list.songs.all  %}
+-                <li>
+-                    <a  href="{%  url  'playlist_app:songs_searcher'  %}">
+-                        {{  song.name  }}
+-                    </a>
+-                </li>
+-            {%empty  %}
+-                <li>Sorry,  no  songs  for  this  playlist  yet.</li>
+-            {%  endfor  %}
+-        </ul>
+-    </span>
+-{% endblock %}
+-
+Index: templates/playlist_app/detail_RDFA.html
+===================================================================
+--- templates/playlist_app/detail_RDFA.html	(revision eba31c05988b6e68b95b646e0b1adf65ac354ce5)
++++ templates/playlist_app/detail_RDFA.html	(revision eba31c05988b6e68b95b646e0b1adf65ac354ce5)
+@@ -1,37 +0,0 @@
+-<span vocab="http://schema.org/" typeof="MusicPlaylist">
+-    <h1>
+-        <span property="name">Top50 Spain</span>
+-            (<a href="/playists/edit/1/"> edit</a>)
+-        </h1>
+-        <h2>
+-            Track
+-                (<a  href="/playlists/song_create_ajax/"> add</a>)
+-        </h2>
+-        <ul>
+-            <li>
+-                <a  href="/playlists/searcher/">
+-                    Safaera
+-                </a>
+-            </li>
+-            <li>
+-                <a  href="/playlists/searcher/">
+-                    Diosa
+-                </a>
+-            </li>
+-            <li>
+-                <a  href="/playlists/searcher/">
+-                    Dance Monkey
+-                </a>
+-            </li>
+-            <li>
+-                <a  href="/playlists/searcher/">
+-                    Nunca Estoy
+-                </a>
+-            </li>
+-            <li>
+-                <a  href="/playlists/searcher/">
+-                    PA' ROMPERLA
+-                </a>
+-            </li>
+-        </ul>
+-</span>
+\ No newline at end of file
+Index: templates/playlist_app/list_detail.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends \"base.html\" %}\n\n{% block page_content %}\n\n{% if user.is_authenticated %}<a href=\"{% url 'list_detail' llista.pk %}\"></a>{% endif %}\n<div class=\"detail\">\n    <h1>{{ llista.name }}</h1>\n    <p style=\"padding-left: 315px; margin-top: -45px;\"><a class=\"btn btn-outline-info\" href=\"/playlists/{{llista.pk}}/edit/\" role=\"button\">Editar</a></p>\n    <p style=\"padding-left: 210px; margin-top: -54px;\"><a class=\"btn btn-outline-info\" href=\"/playlists/{{llista.pk}}/delete/\" role=\"button\">Esborrar</a></p>\n    {% if llista.songs.exists %}\n        <h2>Cançons:</h2>\n\n        {% for song in llista.songs.all %}\n            <ul>{{ song.name }}</ul>\n\n        {% endfor %}\n    {% else %}\n        <p>No hi ha cançons</p>\n    {% endif %}\n\n</div>\n{% endblock %}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- templates/playlist_app/list_detail.html	(revision eba31c05988b6e68b95b646e0b1adf65ac354ce5)
++++ templates/playlist_app/list_detail.html	(date 1590175016708)
+@@ -1,22 +1,29 @@
+ {% extends "base.html" %}
+-
++{% block title %}Playlist_projecte - {{ llista.name }}{% endblock title%}
+ {% block page_content %}
+-
+-{% if user.is_authenticated %}<a href="{% url 'list_detail' llista.pk %}"></a>{% endif %}
+-<div class="detail">
+-    <h1>{{ llista.name }}</h1>
+-    <p style="padding-left: 315px; margin-top: -45px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/edit/" role="button">Editar</a></p>
+-    <p style="padding-left: 210px; margin-top: -54px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/delete/" role="button">Esborrar</a></p>
+-    {% if llista.songs.exists %}
+-        <h2>Cançons:</h2>
++<div vocab="http://schema.org/" typeof="MusicPlaylist">
++    <div class="detail">
++{#        <span vocab="http://schema.org/MusicPlaylist" typeof="MusicPlaylist">#}
++        <h1><span property="name" name="name">{{ llista.name }}</span></h1>
++        <p style="padding-left: 315px; margin-top: -45px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/edit/" role="button">Editar</a></p>
++        <p style="padding-left: 210px; margin-top: -54px;"><a class="btn btn-outline-info" href="/playlists/{{llista.pk}}/delete/" role="button">Esborrar</a></p>
++        {% if llista.songs.exists %}
++            <section>
++                <span property="name" style="display: none">{{ llista.songs }}</span>
++                <h2><strong>Cançons:</strong></h2>
+ 
+-        {% for song in llista.songs.all %}
+-            <ul>{{ song.name }}</ul>
++                {% for song in llista.songs.all %}
++                    <ul>{{ song.name }}</ul>
+ 
+-        {% endfor %}
+-    {% else %}
+-        <p>No hi ha cançons</p>
+-    {% endif %}
++                {% endfor %}
++            </section>
++        {% else %}
++            <p>No hi ha cançons</p>
++{#        </span>#}
++
++        {% endif %}
+ 
++    </div>
+ </div>
+-{% endblock %}
+\ No newline at end of file
++
++{% endblock page_content %}
+\ No newline at end of file
